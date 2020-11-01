@@ -23,9 +23,9 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
-
     </button>
 
+    <!-- Navigation top bar-->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -37,6 +37,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">History</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">System Settings</a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item"><a class="nav-link" href="#">Welcome, Brad</a></li>
@@ -45,12 +48,14 @@
     </div>
   </nav>
 
+  <!-- Header div-->
   <header id="header">
     <div class="container-fluid">
       <h3><i class="fas fa-tachometer-alt"></i> Dashboard <small>Manage your system</small></h3>
     </div>
   </header>
 
+  <!-- Breadcrumb -->
   <section id="breadcrumb">
     <div class="container">
       <nav aria-label="breadcrumb">
@@ -61,33 +66,40 @@
     </div>
   </section>
 
+  <!-- Main Display-->
   <section id="main">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
+
+          <!-- Left Column Content -->
           <ul class="list-group">
-            <li class="list-group-item active"><i class="fas fa-cog"></i> Session(s) Today</li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item prime"><i class="fas fa-cog"></i> Session(s) Today</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
               Queued
-              <span class="badge badge-primary badge-pill">14</span>
+              <span class="badge">3</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
               Routed
-              <span class="badge badge-success badge-pill">14</span>
+              <span class="badge">10</span>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
               Prank
-              <span class="badge badge-warning badge-pill">14</span>
+              <span class="badge">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+              Abandoned
+              <span class="badge">0</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Abandoned
-              <span class="badge badge-danger badge-pill">14</span>
+              Total Chats
+              <span class="badge">18</span>
             </li>
           </ul>
 
           <!-- Well -->
           <div class="card">
-            <div class="card-header">
+            <div class="card-header prime">
               Server Status
             </div>
             <ul class="list-group list-group-flush">
@@ -112,6 +124,100 @@
 
         <!-- Content Column -->
         <div class="col-md-9">
+
+          <!-- Logged-in Agents -->
+          <div class="card">
+            <div class="card-header second">
+              Logged-in Agents
+            </div>
+            <div class="card-body">
+              
+              <figure class="figure">
+                <img src="assets/img/csragent.jpg" class="rounded-circle" alt="Cinque Terre">
+                <figcaption class="figcaption small">Agent x44</figcaption>
+                <figcaption class="figcaption small text-success">01:00:00</figcaption>
+              </figure>
+
+              <figure class="figure">
+                <img src="assets/img/csragent.jpg" class="rounded-circle" alt="Cinque Terre">
+                <figcaption class="figcaption small">Agent x44</figcaption>
+                <figcaption class="figcaption small text-warning">15:00:00</figcaption>
+              </figure>
+
+              <figure class="figure">
+                <img src="assets/img/csragent.jpg" class="rounded-circle" alt="Cinque Terre">
+                <figcaption class="figcaption small">Agent x44</figcaption>
+                <figcaption class="figcaption small text-danger">30:00:00</figcaption>
+              </figure>
+
+              <figure class="figure">
+                <img src="assets/img/csragent.jpg" class="rounded-circle" alt="Cinque Terre">
+                <figcaption class="figcaption small">Agent x44</figcaption>
+                <figcaption class="figcaption small text-secondary">05:00:00</figcaption>
+              </figure>
+
+              
+
+              
+
+            </div>
+          </div>
+
+          <!-- Queued Chats -->
+          <div class="card">
+            <div class="card-header second">
+              Session(s) On Queue
+            </div>
+            <div class="card-body">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Account Number</th>
+                    <th scope="col">Campaign</th>
+                    <th scope="col">Queue Time</th>
+                    <th scope="col">Lapse Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Customer 5042</th>
+                    <td>&nbsp;</td>
+                    <td>Programming</td>
+                    <td>2020-11-02 05:02:30</td>
+                    <td>00:00:00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Customer 5234</th>
+                    <td>&nbsp;</td>
+                    <td>Technical</td>
+                    <td>2020-11-02 05:02:30</td>
+                    <td>00:00:00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Customer 2341</th>
+                    <td>857238057</td>
+                    <td>Account Status</td>
+                    <td>2020-11-02 05:02:30</td>
+                    <td>00:00:00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
         </div>
       </div>
