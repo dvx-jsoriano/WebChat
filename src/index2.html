@@ -19,11 +19,11 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">WebChat</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
-      
+
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,11 +46,77 @@
   </nav>
 
   <header id="header">
-    <div class="jumbotron">
-      <h1 class="display-4">Hello Programmers!</h1>
-      <p class="lead">It's amazing to learn if you are eager to learn new technologies. Weakness can be overcome only if you try until you succeed!</p>
+    <div class="container-fluid">
+      <h3><i class="fas fa-tachometer-alt"></i> Dashboard <small>Manage your system</small></h3>
     </div>
   </header>
+
+  <section id="breadcrumb">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="list-group">
+            <li class="list-group-item active"><i class="fas fa-cog"></i> Session(s) Today</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Queued
+              <span class="badge badge-primary badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Routed
+              <span class="badge badge-success badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Prank
+              <span class="badge badge-warning badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Abandoned
+              <span class="badge badge-danger badge-pill">14</span>
+            </li>
+          </ul>
+
+          <!-- Well -->
+          <div class="card">
+            <div class="card-header">
+              Server Status
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h6 class="card-text">Disk Space Used</h6>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">25%</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <h6 class="card-text">Server Utilization:</h6>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">25%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Content Column -->
+        <div class="col-md-9">
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
